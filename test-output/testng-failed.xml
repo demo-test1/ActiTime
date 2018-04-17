@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="nodeUrl" value="http://localhost:4444/wd/hub/"/>
+    <parameter name="appUrl" value="http://demo.actitime.com/login.do/"/>
+    <classes>
+      <class name="com.actitime.tests.VerifyVersionTest">
+        <methods>
+          <include name="testVerifyVersion"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.tests.VerifyVersionTest -->
+      <class name="com.actitime.tests.ValidLoginLogoutTest">
+        <methods>
+          <include name="testValidLoginLogout"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.tests.ValidLoginLogoutTest -->
+      <class name="com.actitime.tests.VerifyBuildNumber">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="testVerifyBuildNumber"/>
+        </methods>
+      </class> <!-- com.actitime.tests.VerifyBuildNumber -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
