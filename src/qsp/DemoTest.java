@@ -11,7 +11,7 @@ public class DemoTest {
 	public void testA(String city, String area)
 	{
 		Reporter.log(city,true);
-		//city is provided in xml
+		//city is provided in XML
 		Reporter.log(area,true);
 	}
 }
